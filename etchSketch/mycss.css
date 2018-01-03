@@ -1,0 +1,10 @@
+#sketchPad {
+  display: inline-grid;
+}
+#controls{
+
+}
+.lilbox{
+  border: 1px solid black;
+  background-color: grey;
+}
