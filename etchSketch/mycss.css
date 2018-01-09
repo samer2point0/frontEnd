@@ -1,8 +1,15 @@
+html{
+  background-color: red;
+}
 #sketchPad {
   display: inline-grid;
+  margin-left: 25%;
 }
 #controls{
-
+  border-style:dashed;
+  width: 20%;
+  position: fixed;
+  height:50%;
 }
 .lilbox{
   border: 1px solid black;
