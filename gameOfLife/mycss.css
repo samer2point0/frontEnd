@@ -1,0 +1,23 @@
+body{
+  overflow: auto;
+  background-color: grey;
+}
+#grid{
+  display: grid;
+  width: 50vw;
+  height: 50vw;
+  background-color: white;
+  margin:auto;
+}
+#ControlSide{
+  min-width: 10em;
+  overflow: auto;
+  width: 20%;
+  float:left;
+}
+
+.input{
+  width: 90%;
+  margin: auto;
+  float: left;
+}
