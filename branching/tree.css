@@ -1,5 +1,40 @@
+
 canvas{
   width:100vw;
   height:100vh;
   color: black;
+}
+fieldset{
+  position:fixed;
+  overflow: auto;
+  padding: 0;
+  font-size: 70%;
+  top: 0;
+  left: 10px;
+  width: 300px;
+  background-color: #e99393cc;
+  color: #aa1765;
+}
+form{
+  display:none;
+}
+input{
+  margin: 0;
+  width:170px;
+  float: right;
+}
+label{
+  padding: 4px;
+  float:left;
+}
+legend{
+  font-size: 150%;
+}
+legend:hover{
+
+  cursor: pointer;
+  text-shadow: 2px 2px 2px;
+}
+button{
+  width: 100%;
 }

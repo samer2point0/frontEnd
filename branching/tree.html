@@ -6,8 +6,58 @@
     <link rel="stylesheet" href="tree.css">
   </head>
   <body>
+    <fieldset>
+      <legend id="toggleControls">Controls >>> </legend>
+      <form id="controls">
+
+        <label for="maxConcurrent">maxConcurrent</label>
+        <input type="range" name="maxConcurrent" value="500" min="0" max="1000" step="10">
+        <label for="incSize">incSize</label>
+        <input type="range" name="incSize" value="10" min="1" max="50" step="1">
+        <label for="branchProbability">branchProbability</label>
+        <input type="range" name="branchProbability" value="0.04" min="0" max="1" step="0.01">
+        <label for="minBranchAngle">minBranchAngle</label>
+        <input type="range" name="minBranchAngle" value="15" min="0" max="359" step="1">
+        <label for="maxBranchAngle">maxBranchAngle</label>
+        <input type="range" name="maxBranchAngle" value="25" min="0" max="360" step="1">
+        <label for="minWanderAngle">minWanderAngle</label>
+        <input type="range" name="minWanderAngle" value="-1" min="-180" max="0" step="1">
+        <label for="maxWanderAngle">maxWanderAngle</label>
+        <input type="range" name="maxWanderAngle" value="2" min="0" max="180" step="1">
+        <label for="minWidthShrink">minWidthShrink</label>
+        <input type="range" name="minWidthShrink" value="0.92" min="0.7" max="1" step="0.01">
+        <label for="maxWidthShrink">maxWidthShrink</label>
+        <input type="range" name="maxWidthShrink" value="1" min="0.7" max="1" step="0.01">
+
+        <label for="perGenProbInc">perGenProbInc</label>
+        <input type="range" name="perGenProbInc" value="1.15" min="0.5" max="2" step="0.01">
+        <label for="perGenShrinkInc">perGenShrinkInc</label>
+        <input type="range" name="perGenShrinkInc" value="0.99" min="0.91" max="1.01" step="0.001">
+        <label for="perGenWanderInc">perGenWanderInc</label>
+        <input type="range" name="perGenWanderInc" value="0.99" min="0" max="2.0" step="0.1">
+        <label for="branchShrinkLimit">branchShrinkLimit</label>
+        <input type="range" name="branchShrinkLimit" value="1.7" min="1" max="50" step="0.5">
+
+        <label for="minWidth">min Width</label>
+        <input type="range" name="minWidth" value="1"  min="1" max="50" step="1">
+        <label for="startWidth">start Width</label>
+        <input type="range" name="startWidth" value="30"  min="10" max="100" step="1">
+        <label for="startColorWidth">startColorWidth</label>
+        <input type="range" name="startColorWidth" value="1.7" min="0" max="10" step="0.1">
+        <label for="primaryColor">primary Color</label>
+        <input type="color" name="primaryColor" value="black">
+
+        <label for="leavesColor">leaves Color</label>
+        <input type="color" name="leavesColor" value="#0f4e0f">
+
+        <button type="button" name="reset" class="input">reset</button>
+      </form>
+    </fieldset>
     <canvas id="canvas" width="600" height="600"></canvas>
     <script type="text/javascript" src="tree.js">
+    </script>
+    <script type="text/javascript" src="controls.js">
+
     </script>
   </body>
 </html>
